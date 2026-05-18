@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+.nav{
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    grid-template-areas: 
+    "nav-text nav-buttons";
+    background-color: #EDE8DF;
+}
+
+.nav-text{
+    grid-area: nav-text;
+    padding: 15px;
+}
+
+.nav-buttons{
+    grid-area: nav-buttons;
+    padding: 15px;
+    margin-left: 300px;
+}
+
+.nav-buttons a{
+    padding: 15px;
+    border: #000000 solid 1px;
+    background-color: #D5C9B5;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+}

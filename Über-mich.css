@@ -1,0 +1,43 @@
+body{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "nav nav"
+    "title title"
+    "img text";
+}
+
+.title{
+    margin-left: 50px;
+    margin-top: 20px;
+    grid-area: title;
+}
+
+.img{
+    display: grid;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+}
+
+.img img{
+    border-radius: 1000px;
+    margin-left: 50px;
+    height: 300px;
+    grid-area: img;
+}
+
+.text{
+    margin-left: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-area: text;
+}
+
+.text-background{
+    height: auto;
+    background-color: #EDE8DF;
+    padding: 15px;
+    margin-right: 50px;
+}
