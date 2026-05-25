@@ -46,7 +46,7 @@ body{
         margin-left: 0;
         text-align: center;
         padding: 10px;
-        overflow-wrap: break-word;   /* ← Text bricht um */
+        overflow-wrap: break-word;
         word-break: break-word;
     }
 

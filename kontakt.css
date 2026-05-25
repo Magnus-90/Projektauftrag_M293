@@ -1,0 +1,165 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "title title"
+    "img form"
+    "icons form";
+}
+
+.title{
+    margin-left: 50px;
+    margin-top: 20px;
+    grid-area: title;
+}
+
+.img{
+    display: grid;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+}
+
+.img img{
+    border-radius: 1000px;
+    margin-left: 50px;
+    height: 300px;
+    grid-area: img;
+}
+
+.icons{
+    grid-area: icons;
+}
+
+.form-background{
+    background-color: #EDE8DF;
+    padding: 20px;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+form{
+    display: grid;
+    grid-area: form;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "form-title form-title"
+    "form-text form-text"
+    "form-firstname-label form-lastname-label"
+    "form-firstname form-lastname"
+    "form-email-label form-email-label"
+    "form-email form-email"
+    "form-message-label form-message-label"
+    "form-message form-message"
+    "form-button form-button";
+    column-gap: 40px;
+    row-gap: 15px;
+}
+
+.input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.form-title{
+    grid-area: form-title;
+}
+
+.form-text{
+    grid-area: form-text;
+}
+
+.form-label-firstname{
+    grid-area: form-firstname-label;
+}
+
+.input-firstname{
+    grid-area: form-firstname;
+}
+
+.form-label-lastname{
+    grid-area: form-lastname-label;
+}
+
+.input-lastname{
+    grid-area: form-lastname;
+}
+
+.form-label-email{
+    grid-area: form-email-label;
+}
+
+.input-email{
+    grid-area: form-email;
+}
+
+.form-label-message{
+    grid-area: form-message-label;
+}
+
+.input-message{
+    grid-area: form-message;
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-button{
+    grid-area: form-button;
+    width: 180px;
+    padding: 15px;
+    border: none;
+    background-color: #D5C7AF;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    body{
+        grid-template-areas: 
+            "nav"
+            "title"
+            "img"
+            "icons"
+            "form";
+        grid-template-columns: 1fr;
+    }
+
+    .form-background{
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "form-title"
+            "form-text"
+            "form-firstname-label"
+            "form-firstname"
+            "form-lastname-label"
+            "form-lastname"
+            "form-email-label"
+            "form-email"
+            "form-message-label"
+            "form-message"
+            "form-button";
+        column-gap: 0;
+    }
+
+    .form-background{
+        margin: 20px;
+    }
+
+    .form-button{
+        width: 100%;
+    }
+    .input-message{
+        height: 150px;
+    }
+
+    .img img {
+        margin-left: 0;
+    }
+}
