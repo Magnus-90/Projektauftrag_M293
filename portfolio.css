@@ -1,7 +1,6 @@
 body{
     display: grid;
     height: auto;
-    /* justify-content: center; */
     grid-template-columns: 1fr 0.5fr;
     grid-template-areas:
     "nav nav"
@@ -15,16 +14,9 @@ html {
     overflow-y: auto;
 }
 
-.title{
-    margin-left: 50px;
-    margin-top: 20px;
-    grid-area: title;
-}
-
 .video{
     background-color: #EDE8DF;
     margin-right: 70px;
-    /* margin-left: 70px; */
     margin-top: 50px;
     border: 1px solid black;
     min-width: 0;
@@ -112,7 +104,6 @@ html {
 
 @media (max-width: 1200px) {
     body{
-        /* justify-content: center; */
         grid-template-columns: 1fr;
         grid-template-areas:
             "nav"

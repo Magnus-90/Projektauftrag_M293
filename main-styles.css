@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 .nav{
     grid-area: nav;
@@ -24,7 +25,6 @@
     display: flex;
     grid-area: nav-buttons;
     padding: 15px;
-    /* margin-left: 300px; */
     margin-right: 20px;
     justify-self: end;
     gap: 10px;
@@ -37,6 +37,24 @@
     text-decoration: none;
     color: #000000;
     border-radius: 5px;
+}
+
+.title {
+    margin-left: 50px;
+    margin-top: 20px;
+    grid-area: title;
+}
+
+.img {
+    display: grid;
+    height: 500px;
+    justify-content: center;
+    align-content: center; 
+}
+.img img {
+    border-radius: 1000px;
+    margin-left: 50px;
+    height: 300px;
 }
 
 @media (max-width: 700px) {

@@ -7,28 +7,20 @@ body{
     "icons form";
 }
 
-.title{
-    margin-left: 50px;
-    margin-top: 20px;
-    grid-area: title;
-}
-
-.img{
-    display: grid;
-    height: 500px;
+.icons{
+    grid-area: icons; 
+    display: grid; 
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 20px;
     justify-content: center;
     align-content: center;
 }
 
-.img img{
-    border-radius: 1000px;
-    margin-left: 50px;
-    height: 300px;
-    grid-area: img;
-}
-
-.icons{
-    grid-area: icons;
+.icons img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .form-background{
@@ -111,7 +103,7 @@ form{
     width: 180px;
     padding: 15px;
     border: none;
-    background-color: #D5C7AF;
+    background-color: #D5C9B5;
     cursor: pointer;
 }
 

@@ -15,7 +15,7 @@
       <nav class="nav-buttons">
         <a href="über-mich.html">Über Mich</a>
         <a href="fähigkeiten.html">Fähigkeiten</a>
-        <a href="portflolio.html">Portfolio</a>
+        <a href="portfolio.html">Portfolio</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
     </div>
@@ -29,20 +29,28 @@
       />
     </div>
     <div class="icons">
-      <img src="" alt="">
+      <a id="icon-github-1" href="https://github.com/Magnus-90" target="_blank" rel="noopener noreferrer">
+        <img src="./images/github.svg" alt="github logo">
+      </a>
+      <a id="icon-github-2" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/linkedin.png" alt="linkedin logo">
+      </a>
+      <a id="icon-github-3" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="./images/instagram.png" alt="instagram logo">
+      </a>
     </div>
     <div class="form-background">
       <h2 class="form-title">Kontakt Formular</h2>
       <p class="form-text">Schreiben sie mir einfach, falls sie Fragen haben.</p>
       <form action="">
-        <label class="form-label form-label-firstname">Vorname</label>
-        <input class="input input-firstname" type="text" placeholder="Max">
-        <label class="form-label form-label-lastname" for="">Nachname</label>
-        <input class="input input-lastname" type="text" placeholder="Mustermann">
-        <label class="form-label form-label-email" for="">E-Mail</label>
-        <input class="input input-email" type="email" placeholder="max.mustermann@beispiel.com">
-        <label class="form-label form-label-message" for="">Nachricht</label>
-        <textarea class="input input-message" placeholder="Deine Nachricht..."></textarea>
+        <label class="form-label form-label-firstname" for="vorname">Vorname</label>
+        <input id="vorname" class="input input-firstname" type="text" placeholder="Max">
+        <label class="form-label form-label-lastname" for="nachname">Nachname</label>
+        <input id="nachname" class="input input-lastname" type="text" placeholder="Mustermann">
+        <label class="form-label form-label-email" for="email">E-Mail</label>
+        <input id="email" class="input input-email" type="email" placeholder="max.mustermann@beispiel.com">
+        <label class="form-label form-label-message" for="message">Nachricht</label>
+        <textarea id="message" class="input input-message" placeholder="Deine Nachricht..."></textarea>
         <button class="form-button">Senden</button>
       </form>
     </div>
