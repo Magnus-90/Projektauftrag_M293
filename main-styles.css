@@ -80,4 +80,7 @@
     .nav-text{
         justify-content: center;
     }
+    .img img {
+    margin-left: 0px;
+    }
 }
